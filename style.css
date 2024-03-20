@@ -1,0 +1,147 @@
+body {
+    background-color: #FEFAE0;
+    font-family: "Century Gothic", serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.barra_navegacion {
+    display: flex;
+    padding: 20px;
+    background-color: #5F6F52;
+}
+
+.contenedor_link_barra_navegacion {
+    text-align: center;
+    margin-right: 10px; /* Espacio entre los elementos */
+    padding: 5px 10px 5px 10px; /* Espacio alrededor del texto */
+    border: 1px solid black; /* Borde del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    font-weight: bold;
+    transition: background-color 0.7s; /* Transición de color de fondo */
+}
+
+.contenedor_link_barra_navegacion:hover {
+    background-color: #A9B388; /* Color de fondo al pasar el ratón */
+}
+
+.contenedor_link_barra_navegacion:last-child {
+    margin-right: 0; /* Eliminar el margen del último elemento */
+}
+
+.contenedor_link_barra_navegacion a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: black; /* Color del texto */
+}
+
+/*Para hacer la barra superior responsive de manera "casera"*/
+@media screen and (max-width: 700px) { /* Ajusta el valor según lo necesites */
+    .barra_navegacion {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+
+    .contenedor_link_barra_navegacion {
+        margin-right: 0; /* Eliminar el margen derecho */
+        margin-bottom: 10px; /* Agregar un espacio entre los elementos */
+        padding: 10px 5px 10px 5px; /* Espacio alrededor del texto */
+        width: 100%;
+    }
+
+    .contenedor_link_barra_navegacion:last-child {
+        margin-bottom: 0; /* Eliminar el margen del último elemento */
+    }
+}
+
+.contenedor_tabla {
+    width: 80%; /* Ancho del contenedor de la tabla */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+}
+
+table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapso de bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding-top: 20px;
+}
+
+th {
+    border-top: 1px solid black;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #000000; /* Borde inferior */
+    border-right: 1px solid #000000;
+}
+
+th:first-child, td:first-child {
+    border-left: 1px solid #000000;
+}
+
+th {
+    background-color: #5F6F52; /* Color de fondo para encabezados */
+    font-weight: bold; /* Texto en negrita para encabezados */
+}
+
+.contenedor_formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #A9B388;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contenedor_formulario input[type="text"],
+.contenedor_formulario input[type="number"],
+.contenedor_formulario select {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contenedor_formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5F6F52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Century Gothic", serif;
+    font-weight: bold;
+}
+
+.contenedor_formulario input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*Sobreescribiendo bootstrap*/
+.table-striped th {
+    background-color: #5F6F52; /* Color de fondo para encabezados */
+}
+
+.bg-body-tertiary {
+    background-color: #5F6F52 !important;
+}
+
+.contenedor_formulario .btn {
+    border: none;
+    background-color: #5F6F52;
+    transition: 0.5s ease-in-out;
+}
+
+.contenedor_formulario .btn:hover{
+    background-color: #45a049;
+}

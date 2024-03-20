@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1 - Listado Base</title>
+    <link href="../../style.css" rel="stylesheet" />
+</head>
+<body>
+<div class="barra_navegacion">
+    <div class="contenedor_link_barra_navegacion">
+        <a href="../../listado/html_css/listado_base.html">Listado con HTML y CSS base</a>
+    </div>
+    <div class="contenedor_link_barra_navegacion">
+        <a href="../../listado/bootstrap/listado_bootstrap.html">Listado con bootstrap</a>
+    </div>
+    <div class="contenedor_link_barra_navegacion">
+        <a href="../../listado/tailwindcss/listado_tailwindcss.html">Listado con TailwindCSS</a>
+    </div>
+    <div class="contenedor_link_barra_navegacion">
+        <a href="../../formulario/html_css/formulario_base.html">Formulario con HTML y CSS base</a>
+    </div>
+    <div class="contenedor_link_barra_navegacion">
+        <a href="../../formulario/bootstrap/formulario_bootstrap.html">Formulario con bootstrap</a>
+    </div>
+    <div class="contenedor_link_barra_navegacion">
+        <a href="../../formulario/tailwindcss/formulario_tailwindcss.html">Formulario con TailwindCSS</a>
+    </div>
+</div>
+
+<div class="titulo">
+    <h2>Formulario para Agregar Café</h2>
+</div>
+
+<div class="contenedor_formulario">
+    <form id="formularioCafe">
+        <label for="tostador">Tostador:</label><br>
+        <input type="text" id="tostador" name="tostador" required><br>
+
+        <label for="pais">País de Origen:</label><br>
+        <input type="text" id="pais" name="pais" required><br>
+
+        <label for="region">Región de Origen:</label><br>
+        <input type="text" id="region" name="region" required><br>
+
+        <label for="varietales">Varietales:</label><br>
+        <input type="text" id="varietales" name="varietales" required><br>
+
+        <label for="proceso">Proceso:</label><br>
+        <input type="text" id="proceso" name="proceso" required><br>
+
+        <label for="notas">Notas de Cata:</label><br>
+        <input type="text" id="notas" name="notas" required><br>
+
+        <label for="peso">Peso (gr):</label><br>
+        <select id="peso" name="peso" required>
+            <option value="250">250</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+        </select><br>
+
+        <label for="precio">Precio (USD):</label><br>
+        <input type="number" id="precio" name="precio" min="0" step="0.01" required><br>
+
+        <input type="submit" value="Agregar Café">
+    </form>
+</div>
+</body>
+</html>
