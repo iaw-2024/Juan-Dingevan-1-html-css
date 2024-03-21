@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1 - Listado Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../../style.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="bg-[#5F6F52]">
+    <div class="flex justify-between items-center p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse p-4">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">IAW</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-9 rtl:space-x-reverse md:mt-0">
+                <li>
+                    <a href="../../listado/html_css/listado_base.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Listado con HTML y CSS base</a>
+                </li>
+                <li>
+                    <a href="../../listado/bootstrap/listado_bootstrap.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Listado con Bootstrap</a>
+                </li>
+                <li>
+                    <a href="../../listado/tailwindcss/listado_tailwindcss.html" class="block py-2 px-3 text-black font-bold hover:bg-[#A9B388]" aria-current="page">Listado con TailwindCSS</a>
+                </li>
+                <li>
+                    <a href="../../formulario/html_css/formulario_base.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Formulario con HTML y CSS base</a>
+                </li>
+                <li>
+                    <a href="../../formulario/bootstrap/formulario_bootstrap.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Formulario con Bootstrap</a>
+                </li>
+                <li>
+                    <a href="../../formulario/tailwindcss/formulario_tailwindcss.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Formulario con TailwindCSS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="titulo">
+    <h2 class="p-2">Listado de Café</h2>
+</div>
+
+<div class="flex justify-center">
+    <table class="w-80 border-collapse border shadow-lg bg-white">
+        <thead>
+        <tr class="bg-green-600 text-white">
+            <th class="py-3 px-6 text-left border-b border-black-200">Tostadores</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">País de Origen</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">Región de Origen</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">Varietales</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">Proceso</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">Notas de Cata</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">Peso (gr)</th>
+            <th class="py-3 px-6 text-left border-b border-black-200">Precio (USD)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="border-b border-gray-200">
+            <td class="py-3 px-6 text-left whitespace-nowrap">Puerto Blest</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Brasil</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Minas Gerais</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Bourbon</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Natural</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Manzanas, Peras, Clavo de olor</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">250</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">10</td>
+        </tr>
+        <tr class="border-b border-gray-200">
+            <td class="py-3 px-6 text-left whitespace-nowrap">Fuego Tostadores</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Colombia</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Nariño</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Pacamara</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Lavado</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Chocolate semiamargo, cacao, naranja</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">500</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">25</td>
+        </tr>
+        <tr class="border-b border-gray-200">
+            <td class="py-3 px-6 text-left whitespace-nowrap">Puerto Blest</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Bolivia</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Yanacachi</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Catuai</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Lavado</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Limón, té negro, azucar de mascabo</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">1000</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">10</td>
+        </tr>
+        <tr class="border-b border-gray-200">
+            <td class="py-3 px-6 text-left whitespace-nowrap">Delirante!</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Nicaragua</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Jinotega</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Ethiosar</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Natural</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Lavanda, naranja, limón</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">250</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">25</td>
+        </tr>
+        <tr class="border-b border-gray-200">
+            <td class="py-3 px-6 text-left whitespace-nowrap">Puerto Blest</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Colombia</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Huila</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Geisha</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Lavado</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">Bergamota, lima, té negro</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">500</td>
+            <td class="py-3 px-6 text-left whitespace-nowrap">29</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<script>
+    // Obtener referencia al botón y al menú
+    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    const navbarMenu = document.getElementById('navbar-default');
+
+    // Agregar evento de clic al botón
+    toggleButton.addEventListener('click', function() {
+        // Alternar clase para mostrar u ocultar el menú
+        navbarMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

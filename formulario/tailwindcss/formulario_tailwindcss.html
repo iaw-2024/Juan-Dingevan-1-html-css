@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1 - Listado Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../../style.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="bg-[#5F6F52]">
+    <div class="flex justify-between items-center p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse p-4">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">IAW</span>
+        </a>
+
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-9 rtl:space-x-reverse md:mt-0">
+                <li>
+                    <a href="../../listado/html_css/listado_base.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Listado con HTML y CSS base</a>
+                </li>
+                <li>
+                    <a href="../../listado/bootstrap/listado_bootstrap.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Listado con Bootstrap</a>
+                </li>
+                <li>
+                    <a href="../../listado/tailwindcss/listado_tailwindcss.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]" aria-current="page">Listado con TailwindCSS</a>
+                </li>
+                <li>
+                    <a href="../../formulario/html_css/formulario_base.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Formulario con HTML y CSS base</a>
+                </li>
+                <li>
+                    <a href="../../formulario/bootstrap/formulario_bootstrap.html" class="block py-2 px-3 text-black hover:bg-[#A9B388]">Formulario con Bootstrap</a>
+                </li>
+                <li>
+                    <a href="../../formulario/tailwindcss/formulario_tailwindcss.html" class="block py-2 px-3 text-black font-bold hover:bg-[#A9B388]">Formulario con TailwindCSS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="titulo">
+    <h2 class="p-2">Formulario de Café</h2>
+</div>
+
+<form id="formularioCafe" class="max-w-md mx-auto mt-8">
+    <div class="bg-[#A9B388] rounded p-8">
+        <div class="mb-4">
+            <label for="tostador" class="font-medium">Tostador:</label>
+            <input type="text" id="tostador" name="tostador" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="pais" class="block font-medium">País de Origen:</label>
+            <input type="text" id="pais" name="pais" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="region" class="block font-medium">Región de Origen:</label>
+            <input type="text" id="region" name="region" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="varietales" class="block font-medium">Varietales:</label>
+            <input type="text" id="varietales" name="varietales" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="proceso" class="block font-medium">Proceso:</label>
+            <input type="text" id="proceso" name="proceso" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="notas" class="block font-medium">Notas de Cata:</label>
+            <input type="text" id="notas" name="notas" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="peso" class="block font-medium">Peso (gr):</label>
+            <select id="peso" name="peso" class="form-select mt-1 block w-full" required>
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label for="precio" class="block font-medium">Precio (USD):</label>
+            <input type="number" id="precio" name="precio" class="form-input mt-1 block w-full" min="0" step="0.01" required>
+        </div>
+
+        <button type="submit" class="bg-[#5F6F52] hover:bg-green-600 text-white font-medium py-2 px-4 rounded">Agregar Café</button>
+    </div>
+</form>
+
+
+<script>
+    // Obtener referencia al botón y al menú
+    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    const navbarMenu = document.getElementById('navbar-default');
+
+    // Agregar evento de clic al botón
+    toggleButton.addEventListener('click', function() {
+        // Alternar clase para mostrar u ocultar el menú
+        navbarMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
